@@ -3,6 +3,9 @@ through = require 'through2'
 
 module.exports = ->
   transform = (file, encoding, callback)->
+    if file.isNull() then return callback null, file
+    if file.isStream() then return callback new gutil.PluginError('gulp-jade-template', 'Stream not supported')
+
     html = file.contents.toString()
     filename = /(\d{4})-(\d{2})-(\d{2})-(.*)\.html/.exec file.path
     res =
