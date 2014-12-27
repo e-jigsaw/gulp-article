@@ -2,6 +2,12 @@
   "name": "gulp-article",
   "version": "0.0.2",
   "description": "gulp plugin for parse vinyl and convert to article vinyl",
+  "keywords": [
+    "gulpplugin",
+    "article",
+    "gulp"
+  ],
+  "main": "build/index.js",
   "scripts": {
     "test": "./node_modules/.bin/gulp test"
   },
