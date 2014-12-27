@@ -18,6 +18,4 @@ module.exports = ->
     file.contents = new Buffer JSON.stringify res
     callback null, file
 
-  flush = (callback)->
-
-  through.obj transform, flush
+  through.obj transform

@@ -6,9 +6,15 @@
   through = require('through2');
 
   module.exports = function() {
-    var flush, transform;
+    var transform;
     transform = function(file, encoding, callback) {
       var filename, html, res;
+      if (file.isNull()) {
+        return callback(null, file);
+      }
+      if (file.isStream()) {
+        return callback(new gutil.PluginError('gulp-article', 'Stream not supported'));
+      }
       html = file.contents.toString();
       filename = /(\d{4})-(\d{2})-(\d{2})-(.*)\.html/.exec(file.path);
       res = {
@@ -23,8 +29,7 @@
       file.contents = new Buffer(JSON.stringify(res));
       return callback(null, file);
     };
-    flush = function(callback) {};
-    return through.obj(transform, flush);
+    return through.obj(transform);
   };
 
 }).call(this);
