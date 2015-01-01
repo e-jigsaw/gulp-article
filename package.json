@@ -1,6 +1,6 @@
 {
   "name": "gulp-article",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "gulp plugin for parse vinyl and convert to article vinyl",
   "keywords": [
     "gulpplugin",
