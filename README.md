@@ -1,4 +1,4 @@
-gulp-article [![npm version](https://badge.fury.io/js/gulp-article.svg)](http://badge.fury.io/js/gulp-article) [![dependency Status](https://david-dm.org/e-jigsaw/gulp-article/status.png)](https://david-dm.org/e-jigsaw/gulp-article) [![devDependency Status](https://david-dm.org/e-jigsaw/gulp-article/dev-status.svg)](https://david-dm.org/e-jigsaw/gulp-article#info=devDependencies)
+gulp-article [![npm version](https://badge.fury.io/js/gulp-article.svg)](http://badge.fury.io/js/gulp-article) [![dependency Status](https://david-dm.org/e-jigsaw/gulp-article/status.svg)](https://david-dm.org/e-jigsaw/gulp-article) [![devDependency Status](https://david-dm.org/e-jigsaw/gulp-article/dev-status.svg)](https://david-dm.org/e-jigsaw/gulp-article#info=devDependencies)
 ============
 
 gulp plugin for parse vinyl and convert to article [vinyl](https://github.com/wearefractal/vinyl)
