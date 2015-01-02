@@ -1,15 +1,50 @@
-gulp-article
+gulp-article [![npm version](https://badge.fury.io/js/gulp-article.svg)](http://badge.fury.io/js/gulp-article)
 ============
 
-gulp plugin for parse vinyl and convert to article vinyl
+gulp plugin for parse vinyl and convert to article [vinyl](https://github.com/wearefractal/vinyl)
 
 # Usage
 
+This plugin expand `vinyl.contents`.
+
+`yyyy-mm-dd-title.md` style file converts `article` format.
+
+## Example
+
+`2014-12-27-awesome-title.md`
+
+```coffee
+article =
+  body: '<h1>article title</h1><p>article contents</p>'
+  date:
+    year: '2014'
+    month: '12'
+    day: '27'
+  url: 'awesome-title'
+```
+
 # Installation
+
+```
+% npm install gulp-article
+```
 
 # Requirements
 
+* Node.js
+* gulp
+
 # Build
+
+```
+% gulp
+```
+
+# Test
+
+```
+% npm test
+```
 
 # Author
 
